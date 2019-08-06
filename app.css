@@ -29,18 +29,17 @@ html {
     background-color: #1E3D4C;
     border: 2px solid white;
     padding: 10px;
-    border-radius: 8%;
-    width: 200px;
-    margin: auto;
+    width: 100%;
+    /* margin: auto; */
   }
 
-  #contact h1 {
+  #contact h2 {
     border: 2px solid white;
     /* margin: 20px 27%; */
     padding: 10px;
-    border-radius: 8%;
+    /* border-radius: 8%; */
     background-color: #0d7377;
-    width: 200px;
+    width: 100%;
     margin: auto;
   }
   span {
@@ -59,18 +58,18 @@ ul.topnav {
     overflow: hidden;
     background-color: #212121;
   }
-  nav .dropdown{
-    visibility: hidden;
-  }
+  /* nav .dropdown{
+    visibility: hidden; */
+  /* } */
   .hero {
     margin: auto;
-    border-radius: 20%;
+    border-radius: 17%;
   }
   div.hero {
-    margin-top: 10%;
+    margin-top: 180px;
     margin-bottom: 8%;
     padding: 1%;
-    width: 60%;
+    width: 90%;
     background-color: #0d7377;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 3px solid #eee;
@@ -78,22 +77,22 @@ ul.topnav {
   
 div.hero-text {
   text-align: center;
-  padding: 5px 20px;
+  padding: 5px 10px;
   color: #eee;
-  font-size: 26px;
+  font-size: 18px;
 }
   
-  ul.topnav li {
-    float: left;
-  }
-  
-  ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 18px;
-    text-decoration: none;
-    font-size: 18px;
+              ul.topnav li {
+                float: none;
+              }
+              
+              ul.topnav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 18px;
+                text-decoration: none;
+                font-size: 18px;
   }
   .img-circle {
     border: 2px solid #eee;
@@ -109,7 +108,7 @@ div.hero-text {
     justify-content: space-between;
   }
   .projects-section ul li {
-    width: 33%;
+    width: 50%;
     height: auto;
     margin: 2% 0;
   }
@@ -117,13 +116,21 @@ div.hero-text {
     width: 100%;
     color: #eee;
     padding: 4% 0;
+    margin-bottom: 8px;
   }
   .portfolio-section {
     color: #eee;
     background-color: #1E3D4C;
-    padding: 15px 20%;
+    padding: 15px;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
-    margin: 1% 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .portfolio-section a {
+    color:rgb(100, 224, 255);
+  }
+  .portfolio-section a:hover {
+    color: #eee;
   }
 
   .container {
@@ -138,16 +145,19 @@ div.hero-text {
   }
 
 
-  ul.topnav li a:hover:not(.active) {
+  /* ul.topnav li a:hover:not(.active) {
     background-color: #212121;
   }
   
   ul.topnav li a.active {
-    background-color: #0d7377;
-  }
+    background-color: #0d7377; */
+  /* } */
   
   ul.topnav li.right {
     float: right;
+  }
+  ul span {
+    padding: 8px;
   }
   
   #portfolio-avatar {
@@ -213,18 +223,47 @@ div.hero-text {
     border: 2px solid #eee;
     border-radius: 12px;
   }
+
+  div.formcontainer2 {
+    max-width: 30em;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #1E3D4C;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    color: #eee;
+    text-decoration: none;
+  }
+  .formcontainer2 a {
+    color: #eee;
+  }
+  .formcontainer2 a:hover {
+    color: #212121;
+  }
+  .formcontainer2 a:visited {
+    color: #eee;
+  }
+
   #projects, #welcome, #contact {
-    padding-top: 50px;
-    margin-top: -50px;
+    padding-top: 160px;
+    margin-top: -160px;
   }
 
   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-color: #1E3D4C;
+    background-color: #212121;
     padding: 1%;
   }
   footer h3 {
     margin-bottom: 1%;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.7;
   }
   .fa {
     padding: 10px;
@@ -241,7 +280,7 @@ div.hero-text {
       opacity: 0.7;
   }
   
-  .fa-facebook {
+  .fa-github {
     background: #3B5998;
     color: white;
   }
@@ -250,46 +289,48 @@ div.hero-text {
     color: white;
   }
   
-  .fa-youtube {
-    background: #bb0000;
+  .formcontainer a {
+    margin: 2px;
+  }
+  .formcontainer a:visited {
+    color:black;
+  }
+  .formcontainer a:hover {
     color: white;
   }
-  
 
 
 
 
-  @media screen and (max-width: 775px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;
-    }
+@media screen and (min-width: 850px) {
     div.hero {
-      width: 90%;
-      margin-top: 30%;
-    }
-    p {
-      font-size: 12px;
-    }
-    h1 {
-      font-size: 16px;
-    }
-    h3 {
-      font-size: 12px;
+      width: 800px;
     }
     .projects-section ul li {
-      width: 50%;
-      height: auto;
-      margin: 2% 0;
+      width: 33%;
     }
-    #projects, #welcome, #contact {
-      padding-top: 150px;
-      margin-top: -150px;
-    }
+
 }
 
 
-@media screen and (max-width: 550px ) {
-  div.hero {
-    margin-top: 48%;
+@media screen and (min-width: 1150px ) {
+  .portfolio-item {
+    width: 270px;
+    height: auto;
+    margin: 2% 0;
   }
+  .portfolio-section {
+    padding: 15px 80px;
+  }
+  ul.topnav li {
+    float: left;
+  }
+  div.hero {
+    margin-top: 120px;
+  }
+  #projects, #welcome, #contact {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+
 }
